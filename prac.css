@@ -1,0 +1,62 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: "Outfit", sans-serif;
+}
+.main_box{
+    font-size:20px;
+    background-image: url(photo.jpg);
+    background-size:cover;
+    height: 100vh;
+    width:100%;
+}
+#check{
+    display:none;
+}
+.btn-one{
+    color:white;
+    font-size:30px;
+    position:absolute;
+    top:-4px;
+}
+.btn-two{
+    color:white;
+    font-size:30px;
+    position:absolute;
+    left:250px;
+}
+.sidebar_menu{
+    width:300px;
+    height:100vh;
+    border:2px solid black;
+    box-shadow:2px 2px 6px white;
+    position:absolute;
+    left:-300px;
+}
+.sidebar_menu .sidebar_logo{
+    width:200px;
+    border:2px solid black;
+    box-shadow:2px 2px 6px white;
+    position:relative;
+    left:100px;
+    height:60px;
+}
+.options{
+    line-height: 20px;
+    padding-top:10px;
+    margin-top:10px;
+    margin-bottom: 10px;;
+}
+.options li a,i{
+    color:white;
+    text-decoration:none;
+    line-height:20px;
+    padding-top:10px;
+}
+#check:checked ~ .sidebar_menu{
+   left:0;
+}
+#check:checked ~ .btn-one{
+    display:none;
+
+}
